@@ -12,7 +12,6 @@ import yaml
 from sklearn.preprocessing import OneHotEncoder
 
 warnings.simplefilter(action="ignore", category=FutureWarning)
-warnings.filterwarnings("ignore", category=matplotlib.cbook.mplDeprecation)
 
 
 def from_csv_yaml(
