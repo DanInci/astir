@@ -32,6 +32,7 @@ def main():
 
     args.dataset = config['dataset']
     args.markers = config['markers']
+    args.threshold = config['results_threshold']
     args.max_epochs = config['max_epochs']
     args.learning_rate = config['learning_rate']
     args.batch_size = config['batch_size']
