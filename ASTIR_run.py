@@ -15,7 +15,7 @@ from astir import from_anndata_yaml
 def _plot_umap(adata):
     sc.pp.neighbors(adata)
     sc.tl.umap(adata)
-    fig = sc.pl.umap(adata, color=['pred'], size=5, return_fig=True)
+    fig = sc.pl.umap(adata, color=['cell_type', 'pred'], size=12, ncols=2, wspace=0.3, return_fig=True)
 
     return fig
 
